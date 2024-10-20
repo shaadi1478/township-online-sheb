@@ -12,6 +12,7 @@ import jamunaTVLogo from '../../assets/somay.jpeg';
 import bbcBanglaLogo from '../../assets/j.png';
 import jugantorLogo from '../../assets/somay.jpeg';
 import ittefaqLogo from '../../assets/atn.png';
+import { Link } from 'react-router-dom';
 
 const MediaCoverage = () => {
   return (
@@ -40,13 +41,16 @@ const MediaCoverage = () => {
         style={{ height: '100%' }} // Ensure Swiper takes full height
       >
         <SwiperSlide>
+          <Link to='https://www.atnnewstv.com'>
           <img src={somokalLogo} alt="Somokal Logo" className="w-32 h-32 object-contain mx-auto" />
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={atnLogo} alt="ATN News Logo" className="w-32 h-32 object-contain mx-auto" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={jamunaTVLogo} alt="Jamuna TV Logo" className="w-32 h-32 object-contain mx-auto" />
+          <Link to='https://www.atnnewstv.com'><img src={jamunaTVLogo} alt="Jamuna TV Logo" className="w-32 h-32 object-contain mx-auto" />
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={bbcBanglaLogo} alt="BBC Bangla Logo" className="w-32 h-32 object-contain mx-auto" />
