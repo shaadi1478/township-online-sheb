@@ -20,9 +20,9 @@ const Header = () => {
     <div>
     <ImageSlider></ImageSlider>
             <Notice></Notice>
+            <AppImage></AppImage>
             <SectionWithCard></SectionWithCard>
             <TextBlock1></TextBlock1>
-            <AppImage></AppImage>
             <TextBlock></TextBlock>
             <TestimonialSection></TestimonialSection>
             <TextBlock2></TextBlock2>

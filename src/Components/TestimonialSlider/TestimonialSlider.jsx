@@ -1,7 +1,13 @@
-// TestimonialSection.jsx
+// TestimonialSlider.jsx
 import React from 'react';
+import 'swiper/swiper.min.css'; // Import Swiper styles
+import 'swiper/components/navigation/navigation.min.css'; // Import navigation styles
+import 'swiper/components/pagination/pagination.min.css'; // Import pagination styles
 
-const TestimonialSection = () => {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper'; // Import required Swiper components
+
+const TestimonialSlider = () => {
     const testimonials = [
         {
             image: 'https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/240595331_234491978690770_5591950349745225189_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEoN9sGFdIidk5QmeHk0pbd3oMMuaKlkjTegwy5oqWSNNph79p8g8tb5J5HmEuevrKXFNs3Rrsq1ZUxkA6lj9_v&_nc_ohc=eoaq-ZFz28EQ7kNvgGKvBB-&_nc_zt=23&_nc_ht=scontent.fjsr6-1.fna&_nc_gid=AzB14wcZeP62ZraXTDUyyDC&oh=00_AYBfLpLeFkux4a72gCTxtRILJvI5q2Hps5EZ2sOHESOFWQ&oe=6716F445',
@@ -27,30 +33,43 @@ const TestimonialSection = () => {
 
     return (
         <div className="md:mt-1 mt-5">
-    <h1 className="text-center text-3xl font-bold mb-6">What Our Users Say</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1400px] mx-auto">
-        {testimonials.map((testimonial, index) => (
-            <div 
-                key={index} 
-                className="bg-white shadow-lg rounded-lg p-4 transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            <h1 className="text-center text-3xl font-bold mb-6">What Our Users Say</h1>
+            <Swiper
+                modules={[Navigation, Pagination]} // Add the Navigation and Pagination modules
+                spaceBetween={30}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                }}
             >
-                <div className="flex items-center mb-4">
-                    <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-16 h-16 rounded-full border-2 border-orange-500 mr-4"
-                    />
-                    <div>
-                        <h4 className="font-semibold text-lg">{testimonial.name}</h4>
-                    </div>
-                </div>
-                <p className="text-gray-700 text-base">{testimonial.text}</p>
-            </div>
-        ))}
-    </div>
-</div>
-
+                {testimonials.map((testimonial, index) => (
+                    <SwiperSlide key={index} className="bg-white shadow-lg rounded-lg p-4">
+                        <div className="flex items-center mb-4">
+                            <img
+                                src={testimonial.image}
+                                alt={testimonial.name}
+                                className="w-16 h-16 rounded-full border-2 border-orange-500 mr-4"
+                            />
+                            <div>
+                                <h4 className="font-semibold text-lg">{testimonial.name}</h4>
+                            </div>
+                        </div>
+                        <p className="text-gray-700 text-base">{testimonial.text}</p>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
     );
 };
 
-export default TestimonialSection;
+export default TestimonialSlider;

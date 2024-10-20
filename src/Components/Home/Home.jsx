@@ -12,7 +12,7 @@ import TextBlock2 from '../TextBlock2/TextBlock2';
 import MediaCoverage from '../MediaCoverage/MediaCoverage';
 import ContactCard from '../ContactCard/ContactCard';
 import Footer from '../Footer/Footer';
-import { MdCall } from 'react-icons/md';
+import { MdCall, MdEmail } from 'react-icons/md';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const Home = () => {
     return (
@@ -27,6 +27,7 @@ const Home = () => {
             +880 1700962537
           </span>
           <span className="flex items-center">
+          <MdEmail className='mr-2 text-2xl' />
             townshiponlineseba@gmail.com
           </span>
         </div>

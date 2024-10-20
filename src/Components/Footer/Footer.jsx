@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from '../../assets/Township.png'
+import logo from '../../assets/footer.png'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-[#1c2937] text-white py-10">
       <div className="container mx-auto px-5">
         {/* Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Logo and Description */}
           <div>
-            <img src={logo} alt="Logo" className="mb-4 h-24 w-32" />
+            <img src={logo} alt="Logo" className="mb-4" />
             <p className="text-sm">
               সারা বাংলাদেশে বিস্তৃত দক্ষতা অর্জনের মাধ্যমে নিজেকে গড়ার অন্যতোম ট্রেনিং ইনস্টিটিউট ফিউচার আইটি।
             </p>
@@ -33,7 +34,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className='md:ml-24'>
             <h3 className="text-lg font-semibold mb-4">যোগাযোগ</h3>
             <ul className="text-sm space-y-2">
               <li>
@@ -49,12 +50,54 @@ const Footer = () => {
           </div>
 
           {/* Other Links */}
-          
+          <div className='md:ml-24'>
+            <h3 className="text-lg font-semibold mb-4">Developer Infornamation</h3>
+            <ul className="text-sm space-y-2">
+              <li>
+                <strong>Sheik Ave Rajun</strong>  (Funder Township Online Seba) <br /> Khulna, 9000
+              </li>
+              <p>Contact Us</p>
+              <div className="flex space-x-4 text-xl md:text-2xl">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <FaFacebook className="rounded-full text-white hover:text-blue-600 transition-colors duration-200" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram className="text-white hover:text-pink-600 transition-colors duration-200" />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin className="text-white hover:text-blue-700 transition-colors duration-200" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <FaTwitter className="text-white hover:text-blue-400 transition-colors duration-200" />
+          </a>
+        </div>
+            </ul>
+          </div>
         </div>
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-xs">
-          <p>Copyright @  Township Online Seba</p>
+          <p>Copyright © 2024 Township Online Seba. All right reserved</p>
         </div>
       </div>
     </footer>

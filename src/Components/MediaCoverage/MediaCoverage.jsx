@@ -15,8 +15,8 @@ import ittefaqLogo from '../../assets/atn.png';
 
 const MediaCoverage = () => {
   return (
-    <div className="max-w-[1400px] mx-auto py-10 bg-[#F7F8FA] rounded" style={{ height: '250px' }}>
-      <h2 className="text-center text-2xl font-semibold -mt-20 mb-6">Media Coverage</h2>
+    <div className="max-w-[1400px] mx-auto py-11 -mt-20  bg-[#F7F8FA] rounded" style={{ height: '250px' }}>
+      <h2 className="text-center text-2xl font-semibold -mt-22 mb-6">Media Coverage</h2>
       
       <Swiper
         spaceBetween={10} // Set the gap between slides to 10px

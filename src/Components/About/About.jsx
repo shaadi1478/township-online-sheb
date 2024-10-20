@@ -2,6 +2,7 @@ import logo from '../../assets/seminer.webp';
 import newMissionLogo from '../../assets/newMissionLogo.png';
 import newVisionLogo from '../../assets/newVisionLogo.png';
 import newMotiveLogo from '../../assets/newMotiveLogo.png';
+import ImageSlider from '../ImageSlider/ImageSlider';
 
 
 const About = () => {

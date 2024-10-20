@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactCard = () => {
   return (
-    <div className=" max-w-[1400px] mx-auto flex flex-col md:gap-60 lg:flex-row mt-5 mb-5 bg-[#FCFCF5] shadow-lg rounded-lg p-6 space-y-6 lg:space-y-0 lg:space-x-8">
+    <div className=" max-w-[1400px] mx-auto flex flex-col md:gap-72 lg:flex-row mt-5 mb-5 bg-[#FCFCF5] shadow-lg rounded-lg p-6 space-y-6 lg:space-y-0 lg:space-x-8">
       {/* Google Map Section */}
       <div className="w-full lg:w-1/2">
         <iframe

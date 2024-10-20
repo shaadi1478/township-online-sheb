@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logos from '../../assets/Township.png';
 import { Link } from 'react-router-dom';
+import { IoMdTime } from 'react-icons/io';
+import { TiWeatherCloudy } from 'react-icons/ti';
 
 const Navbar = () => {
   const [currentTime, setCurrentTime] = useState('');
@@ -21,7 +23,7 @@ const Navbar = () => {
 
   // Simulating weather data (you can integrate any weather API)
   useEffect(() => {
-    setWeather('Sunny 25°C');
+    setWeather('Sunny 25°C (Satkhira)');
   }, []);
 
   // Function to toggle the mobile menu
@@ -45,16 +47,11 @@ const Navbar = () => {
         {/* Time and Weather for Desktop */}
         <div className="hidden md:flex space-x-6 text-xl font-bold items-center">
           <div className="flex items-center">
-            <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3"></path>
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 12h4"></path>
-            </svg>
+          <IoMdTime className='text-2xl mr-2' />
             {currentTime}
           </div>
           <div className="flex items-center">
-            <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0a9 9 0 0112 0m0 0l2 2m-2 2a9 9 0 01-12 0m12 0l-2 2m-8-4h12"></path>
-            </svg>
+          <TiWeatherCloudy className='text-2xl mr-2'/>
             {weather}
           </div>
         </div>

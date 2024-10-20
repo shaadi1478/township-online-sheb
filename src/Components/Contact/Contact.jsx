@@ -5,10 +5,10 @@ const Contact = () => {
     return (
         <div>
             <h1>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-gray-100">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 bg-gray-100 ">
 
                     {/* Contact Information */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 px-24">
                         <div className='md:flex items-center gap-4'>
                             <div className='text-4xl bg-orange-400 text-white rounded-md'>
                                 <CiLocationOn />
@@ -51,7 +51,7 @@ const Contact = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-white shadow-lg rounded-lg p-6">
+                    <div className="bg-white shadow-lg rounded-lg p-6 mr-24">
                         <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
                         <form>
                             <div className="mb-4">
