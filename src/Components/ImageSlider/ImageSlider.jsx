@@ -21,7 +21,7 @@ const ImageSlider = () => {
       <Swiper
         spaceBetween={30}
         effect={'fade'}
-        navigation={true}
+        navigation={false}
         pagination={{
           clickable: true,
         }}

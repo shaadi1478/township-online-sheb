@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav style={{ backgroundColor: '#F5F5F7' }} className="text-black mb-5">
-      <div className="container mx-auto flex justify-between items-center px-4 lg:px-0">
+      <div className="container mx-auto flex justify-between items-center px-4 lg:px-[12px]">
         {/* Logo with responsive size */}
         <div>
           <Link to='/'>
@@ -67,8 +67,9 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <ul className={`md:flex space-x-5 items-center ${isMenuOpen ? 'block' : 'hidden'} md:block mt-4 md:mt-0`}>
-          <li><a href="/about" className="hover:text-orange-500 text-xs md:text-[14px]">আমাদের সম্পর্কে</a></li>
-          <li><a href="/contacts" className="hover:text-orange-500 text-xs md:text-[14px]">যোগাযোগ</a></li>
+        <Link to='/about'><li><a href="/" className="hover:text-orange-500 text-xs md:text-[14px]">আমাদের সম্পর্কে</a></li></Link>
+        <Link to='/app'> <li><a href="" className="hover:text-orange-500 text-xs md:text-[14px] ">অ্যাপ</a></li></Link>
+        <Link to='/contacts'> <li><a href="" className="hover:text-orange-500 text-xs md:text-[14px] mr-5">যোগাযোগ</a></li></Link>
         </ul>
       </div>
 
