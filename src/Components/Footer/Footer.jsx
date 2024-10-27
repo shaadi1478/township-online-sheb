@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div>
             <img src={logo} alt="Logo" className="mb-4" />
-            <p className="text-sm">
+            <p className="text-sm ml-2">
               সারা বাংলাদেশে বিস্তৃত দক্ষতা অর্জনের মাধ্যমে নিজেকে গড়ার অন্যতোম ট্রেনিং ইনস্টিটিউট ফিউচার আইটি।
             </p>
             <div className="mt-4 flex space-x-4">

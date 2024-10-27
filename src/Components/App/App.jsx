@@ -11,7 +11,7 @@ import TextBlock1 from '../TextBlock1/TextBlock1';
 
 const App = () => {
     const sliderSettings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -21,9 +21,10 @@ const App = () => {
     };
 
     const images = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWdSjUEA1sLymW2tyWaqBsxufQc4mrEqD0A&s',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWdSjUEA1sLymW2tyWaqBsxufQc4mrEqD0A&s',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWdSjUEA1sLymW2tyWaqBsxufQc4mrEqD0A&s',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYvs5arsp3PA8-XCi7bsP-Ms1eiikfBZzvQ&s',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYvs5arsp3PA8-XCi7bsP-Ms1eiikfBZzvQ&s',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYvs5arsp3PA8-XCi7bsP-Ms1eiikfBZzvQ&s',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYvs5arsp3PA8-XCi7bsP-Ms1eiikfBZzvQ&s',
     ];
 
     return (
@@ -38,7 +39,7 @@ const App = () => {
                     </p>
                     <div>
                         <Link
-                            href="https://www.youtube.com/watch?v=-1CwZ-U7UEs"
+                            to="https://www.facebook.com/townshiponlineseba01"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="transition-transform transform hover:scale-105 duration-300" // Apply the hover effect to the anchor tag
@@ -57,17 +58,19 @@ const App = () => {
                                 <img
                                     src={image}
                                     alt={`Slide ${index + 1}`}
-                                    className="h-[450px] w-full object-cover rounded-lg shadow-lg"
+                                    className="h-[460px] w-full object-cover rounded-lg"
                                 />
                             </div>
                         ))}
                     </Slider>
                 </div>
             </div>
+            <div className='-mt-20'>
             <TextBlock1 />
             <TextBlock />
             <AppImage2 />
             <AppImage3 />
+            </div>
         </div>
     );
 };
