@@ -21,9 +21,10 @@ const About = () => {
                             <p className="py-4 text-sm md:text-base">
                                 At Township Online Seba, we harness the transformative power of technology to bridge the gap between individuals and essential services. Established in 2021, our mission is to provide a seamless online experience that enhances accessibility and convenience for our users.
 
-                                We are dedicated to delivering high-quality services that empower our community and support personal and professional growth. With a commitment to innovation and user satisfaction, we strive to be the leading online service provider in the region.
+                                <p className="hidden md:flex text-sm md:text-base" >
+                                    We are dedicated to delivering high-quality services that empower our community and support personal and professional growth. With a commitment to innovation and user satisfaction, we strive to be the leading online service provider in the region.
 
-                                Join us in simplifying your everyday tasks and enhancing your quality of life through our comprehensive range of services!                        </p>
+                                    Join us in simplifying your everyday tasks and enhancing your quality of life through our comprehensive range of services!</p>                        </p>
 
                         </div>
                     </div>

@@ -30,9 +30,9 @@ const App = () => {
     return (
         <div className="max-w-[1400px] mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center mt-11 mb-20 space-y-6 md:space-y-0 md:space-x-8">
-                <div className="text-center md:text-left md:w-1/2 space-y-4">
-                    <h2 className="text-lg font-semibold italic text-orange-500">"অনলাইনে সেবা নিন ঘরে বসেই"</h2>
-                    <h1 className="text-5xl font-bold text-gray-900">টাউনশীপ অনলাইন সেবা</h1>
+                <div className="text-start md:text-left md:w-1/2 space-y-4">
+                    <h2 className="md:text-lg font-semibold italic text-orange-500">"অনলাইনে সেবা নিন ঘরে বসেই"</h2>
+                    <h1 className="md:text-5xl text-2xl font-bold text-gray-900">টাউনশীপ অনলাইন সেবা</h1>
                     <p className="text-gray-600">
                         অ্যাপসটি <strong className='text-black'>১৯শে অক্টোবর ২০২৪ইং শনিবার</strong> সকাল ১০.০০ ঘটিকা হইতে ডাউনলোড করে ব্যবহার করতে পারবেন। অ্যাপটি ডাউনলোড করতে নিচের DOWNLOAD বাটনে ক্লিক বা টাচ করুন।
                         অ্যাপটি সর্বশেষ আপডেটঃ ১৯ অক্টোবর ২০২৪ইং।
@@ -44,7 +44,7 @@ const App = () => {
                             rel="noopener noreferrer"
                             className="transition-transform transform hover:scale-105 duration-300" // Apply the hover effect to the anchor tag
                         >
-                            <img src={down} alt="YouTube Link" className="h-16 transition-transform transform hover:scale-105 duration-300" />
+                            <img src={down} alt="YouTube Link" className="md:h-16 h-14 transition-transform transform hover:scale-105 duration-300" />
                         </Link>
                     </div>
 
@@ -58,7 +58,7 @@ const App = () => {
                                 <img
                                     src={image}
                                     alt={`Slide ${index + 1}`}
-                                    className="h-[460px] w-full object-cover rounded-lg"
+                                    className="md:h-[460px] w-full object-cover rounded-lg"
                                 />
                             </div>
                         ))}

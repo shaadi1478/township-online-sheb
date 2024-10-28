@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/footer.png'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { IoCallSharp } from 'react-icons/io5';
 const Footer = () => {
   return (
     <footer className="bg-[#1c2937] text-white py-10">
@@ -34,9 +35,9 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className='md:ml-24'>
+          <div className='md:ml-24 hidden md:flex '>
             <h3 className="text-lg font-semibold mb-4">যোগাযোগ</h3>
-            <ul className="text-sm space-y-2">
+            <ul className="text-sm space-y-2 mt-11 -ml-24">
               <li>
                 <strong>Corporate Office:</strong> Rupayan Trade Centre (Level-17) <br /> Bangla Motor, Dhaka
               </li>
@@ -89,6 +90,14 @@ const Footer = () => {
             aria-label="Twitter"
           >
             <FaTwitter className="text-white hover:text-blue-400 transition-colors duration-200" />
+          </a>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <IoCallSharp className="text-white hover:text-blue-400 transition-colors duration-200" />
           </a>
         </div>
             </ul>
