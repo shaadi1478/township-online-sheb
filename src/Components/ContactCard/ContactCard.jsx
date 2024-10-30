@@ -28,14 +28,14 @@ const ContactCard = () => {
         <div className="mt-4">
           <h3 className="text-lg font-semibold text-gray-800">Phone Number</h3>
           <ul className="text-gray-700">
-            <li>+880 1999999999</li>
+            <li>+880 1956686338</li>
             <li>+880 1888888888</li>
           </ul>
         </div>
 
         <div className="mt-4">
           <h3 className="text-lg font-semibold text-gray-800">E-Mail</h3>
-          <p className="text-gray-700">info@example.com</p>
+          <p className="text-gray-700">sheikhshaadi137@gmail.com</p>
         </div>
       </div>
     </div>

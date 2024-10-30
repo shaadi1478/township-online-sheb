@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from '../../assets/footer.png'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaReact, FaTwitter } from 'react-icons/fa';
 import { IoCallSharp } from 'react-icons/io5';
+import { FaLocationDot } from 'react-icons/fa6';
 const Footer = () => {
   return (
     <footer className="bg-[#1c2937] text-white py-10">
       <div className="container mx-auto px-5">
         {/* Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           {/* Logo and Description */}
           <div>
             <img src={logo} alt="Logo" className="mb-4" />
@@ -54,52 +55,57 @@ const Footer = () => {
           <div className='md:ml-24'>
             <h3 className="text-lg font-semibold mb-4">Developer Infornamation</h3>
             <ul className="text-sm space-y-2">
+              <li className='space-y-2'>
+                
+                <strong>Sheikh Shaadi</strong>  <span className='flex items-center gap-1'>(<FaReact />React Developer) </span> <span className='flex items-center gap-1'><FaLocationDot /> Madaripur, 7900</span><span className='flex items-center gap-1'><IoCallSharp /> 01956686338</span>
+
+              </li>
               <li>
                 <strong>Sheik Ave Rajun</strong>  (Funder Township Online Seba) <br /> Khulna, 9000
               </li>
               <p>Contact Us</p>
               <div className="flex space-x-4 text-xl md:text-2xl">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <FaFacebook className="rounded-full text-white hover:text-blue-600 transition-colors duration-200" />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <FaInstagram className="text-white hover:text-pink-600 transition-colors duration-200" />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin className="text-white hover:text-blue-700 transition-colors duration-200" />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <FaTwitter className="text-white hover:text-blue-400 transition-colors duration-200" />
-          </a>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <IoCallSharp className="text-white hover:text-blue-400 transition-colors duration-200" />
-          </a>
-        </div>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook className="rounded-full text-white hover:text-blue-600 transition-colors duration-200" />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="text-white hover:text-pink-600 transition-colors duration-200" />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin className="text-white hover:text-blue-700 transition-colors duration-200" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter className="text-white hover:text-blue-400 transition-colors duration-200" />
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <IoCallSharp className="text-white hover:text-blue-400 transition-colors duration-200" />
+                </a>
+              </div>
             </ul>
           </div>
         </div>
