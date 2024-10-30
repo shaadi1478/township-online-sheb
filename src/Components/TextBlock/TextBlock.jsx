@@ -19,7 +19,7 @@ const TextBlock = () => {
             <img
               src={app1}
               alt="App 1 preview"
-              className="rounded h-[140px]  transition-transform duration-300 transform hover:scale-110 mx-auto"
+              className="rounded md:h-[140px]  transition-transform duration-300 transform hover:scale-110 mx-auto"
             />
           </a>
           <a href="https://link-to-app2.com" target="_blank" rel="noopener noreferrer">
